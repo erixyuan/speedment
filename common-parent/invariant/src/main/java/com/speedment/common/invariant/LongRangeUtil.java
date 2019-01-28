@@ -24,6 +24,8 @@ import java.util.function.Function;
  */
 public final class LongRangeUtil {
 
+    private LongRangeUtil() {}
+
     /**
      * Returns the given value if it is positive.
      *
@@ -180,7 +182,4 @@ public final class LongRangeUtil {
         return val;
     }
 
-    private LongRangeUtil() {
-        throw new UnsupportedOperationException();
-    }
 }

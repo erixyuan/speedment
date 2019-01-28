@@ -24,6 +24,9 @@ import java.util.function.Function;
  */
 public final class IntRangeUtil {
 
+
+    public IntRangeUtil() {}
+
     /**
      * Returns the given value if it is positive.
      *
@@ -180,7 +183,4 @@ public final class IntRangeUtil {
         return val;
     }
 
-    public IntRangeUtil() {
-        throw new UnsupportedOperationException();
-    }
 }

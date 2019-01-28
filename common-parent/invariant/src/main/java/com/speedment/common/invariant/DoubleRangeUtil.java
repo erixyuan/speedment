@@ -28,6 +28,8 @@ import static java.lang.String.format;
  */
 public final class DoubleRangeUtil {
 
+    private DoubleRangeUtil() { }
+
     /**
      * Returns the given value if it is positive (greater than {@code 0}).
      *
@@ -253,10 +255,4 @@ public final class DoubleRangeUtil {
         return val;
     }
 
-    /**
-     * This class should not be instantiated.
-     */
-    private DoubleRangeUtil() {
-        throw new UnsupportedOperationException();
-    }
 }
