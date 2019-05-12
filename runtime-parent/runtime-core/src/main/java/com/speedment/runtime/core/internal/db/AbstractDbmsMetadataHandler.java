@@ -167,7 +167,7 @@ public abstract class AbstractDbmsMetadataHandler implements DbmsMetadataHandler
         }
     }        
 
-    private CompletableFuture<Project> readSchemaMetadata(
+    protected CompletableFuture<Project> readSchemaMetadata(
         final Project project,
         final Dbms dbms,
         final Predicate<String> filterCriteria,
@@ -804,7 +804,7 @@ public abstract class AbstractDbmsMetadataHandler implements DbmsMetadataHandler
         return result;
     }
 
-    private <P extends HasId & HasName, D extends Document & HasId & HasName & HasMainInterface & HasParent<P>> String actionName(D doc) {
+    protected <P extends HasId & HasName, D extends Document & HasId & HasName & HasMainInterface & HasParent<P>> String actionName(D doc) {
         return doc.mainInterface().getSimpleName() +
             " " +
             doc.getId() +
