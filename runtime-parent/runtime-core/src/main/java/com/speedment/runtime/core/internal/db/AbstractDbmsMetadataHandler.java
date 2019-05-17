@@ -75,7 +75,7 @@ public abstract class AbstractDbmsMetadataHandler implements DbmsMetadataHandler
     @Inject private ProjectComponent projectComponent;
     @Inject private JavaTypeMap javaTypeMap;
 
-    private Map<Class<? extends Document>, AtomicLong> timers;
+    protected Map<Class<? extends Document>, AtomicLong> timers;
 
     protected AbstractDbmsMetadataHandler() {
         timers = new ConcurrentHashMap<>();
